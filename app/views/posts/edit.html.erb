@@ -1,0 +1,7 @@
+<h1>Editing Post</h1>
+<br/>
+<%= render 'form', post: @post %>
+
+<%= link_to 'Show', @post, class:"btn btn-primary" %> 
+<%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger"  %>
+<%= link_to 'Back', posts_path, class:"btn btn-secondary" %>

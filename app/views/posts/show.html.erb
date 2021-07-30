@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <h1 class="display-4">
+    <%= @post.pimage %>
+  </h1>
+  <p class="lead">
+    <%= @post.title %> 
+    <br/>
+    <%= link_to image_tag(@post.image), posts_path %>
+    <br/>
+    <%= @post.description %>
+    
+  </p>
+  <br/>
+  <%= render 'comments/comment' %>
+  <br/>
+  <%= link_to 'Edit', edit_post_path(@post), class:"btn btn-primary" %> 
+  <%= link_to 'Back', posts_path, class:"btn btn-secondary" %>
+</div>
